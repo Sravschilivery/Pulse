@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font">
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.jpg.png" alt="" srcset="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active h3" aria-current="page" href="#"><i class="bi bi-journal-check h3"></i> Book Consultation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active h3" aria-current="page" href="#"><i class="bi bi-telephone-inbound h3"></i>  Call US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active h3" aria-current="page" href="#"><i class="bi bi-envelope h3"></i>  abc@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item  me-3">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#">About us</a>
+          </li>
+          <!-- Treatments -->
+          <li class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Treatments
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle active" id="orthopaedicDropdown">Orthopaedic</a>
+                <ul class="dropdown-submenu">
+                  <li><a class="dropdown-item" href="">Knee Replacement</a></li>
+                  <li><a class="dropdown-item" href="#">Ligament</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="#">Physiotherapy</a></li>
+            </ul>
+          </li>
+          <!-- destination -->
+          <li class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Destination
+            </a>
+            <ul class="dropdown-menu me-3">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" id="orthopaedicDropdown">Mumbai</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Goa</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#">Hospitals</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#">FAQs</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#">Blog</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#">Request a Quote</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="kneee.jpg" class="d-block w-100" alt="..." loading="lazy">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="text-light justify-content-start"><b> Total Knee Replacement</b></h3>
+          <p class="text-light justify-content-start">Total knee replacement is a surgery to remove and replace the whole
+            damaged knee joint with an artificial joint.</p>
+          <button type="submit" class="btn btn-secondary ">Enquire Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg border bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+          <li class="nav-item  me-3">
+            <a class="nav-link active" aria-current="page" href="#Overview">Overview</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#Eligibility">Eligibility</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#Preparation">Preparation</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#About Treatment">About Treatment</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#Post Treatment Care">Post Treatment Care</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#Recovery Tips">Recovery Tips</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#FAQs">FAQs</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#Patient Stories">Patient Stories</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row height mb-3" style="border-bottom-style: dashed; border-color: rgb(0, 85, 255); border-width: 1px;">
+      <div class="col-lg-7 col-md-12 col-sm-12 align-content-center" id="Overview">
+        <div class="align-content-center ">
+          <h2><b>Treatment Overview<span class="dot">.</span></b></h2>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti reiciendis, itaque
+            reprehenderit quas ea maiores! Nostrum saepe iste rem aut?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa reprehenderit odio beatae harum minus
+            optio laboriosam enim sequi debitis!
+          </p>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. A impedit quod quam voluptatum excepturi perspiciatis adipisci numquam. Eligendi et quis vitae incidunt recusandae sint necessitatibus, placeat laudantium ipsum officiis harum!</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12 col-sm-12 d-flex d-none d-lg-block align-items-center justify-content-center">
+        <img src="overview.png" class="img-fluid" height="250px" loading="lazy" alt="Overview image">
+      </div>
+    </div>
+  </div>  
+</div>
+  <div class="container">
+    <div class="row mt-2">
+      <div class="col-sm-12 col-md-8 col-lg-8">
+        <div class="row">
+          <div class="col-12" id="Eligibility"
+            style="border-bottom-style: dashed; border-color: rgb(0, 85, 255); border-width: 1px;">
+            <h4><b>Eligibility For Treatment<span class="dot">.</span></b></h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum autem eveniet, in sint recusandae
+              labore doloribus vel laudantium, id ratione necessitatibus ea voluptatibus iure nemo dolorem ad itaque.
+              Commodi.</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <ul class="a">
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+            </ul>
+          </div>
+
+          <div class="col-12" id="Preparation"
+            style="border-bottom-style: dashed; border-color: rgb(0, 85, 255); border-width: 1px; padding-top: 25px;">
+            <h4><b>Preparation For Treatment<span class="dot">.</span></b></h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum autem eveniet, in sint recusandae
+              labore doloribus vel laudantium, id ratione necessitatibus ea voluptatibus iure nemo dolorem ad itaque.
+              Commodi.</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <ul class="a">
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+            </ul>
+          </div>
+
+          <div class="col-12" id="About Treatment"
+            style="border-bottom-style: dashed; border-color: rgb(0, 85, 255); border-width: 1px; padding-top: 25px">
+            <h4><b>About Treatment<span class="dot">.</span></b></h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum autem eveniet, in sint recusandae
+              labore doloribus vel laudantium, id ratione necessitatibus ea voluptatibus iure nemo dolorem ad itaque.
+              Commodi.</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <ul class="a">
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+            </ul>
+          </div>
+
+          <div class="col-12" id="Post Treatment Care"
+            style="border-bottom-style: dashed; border-color: rgb(0, 85, 255); border-width: 1px; padding-top: 25px">
+            <h4><b>Post-Treatment Care Treatment<span class="dot">.</span></b></h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum autem eveniet, in sint recusandae
+              labore doloribus vel laudantium, id ratione necessitatibus ea voluptatibus iure nemo dolorem ad itaque.
+              Commodi.</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <ul class="a">
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+            </ul>
+          </div>
+
+          <div class="col-12" id="Recovery Tips"
+            style="border-bottom-style: dashed; border-color: rgb(0, 85, 255); border-width: 1px; padding-top: 25px">
+            <h4><b>Treatment Recovery Tips<span class="dot">.</span></b></h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum autem eveniet, in sint recusandae
+              labore doloribus vel laudantium, id ratione necessitatibus ea voluptatibus iure nemo dolorem ad itaque.
+              Commodi.</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <ul class="a">
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+              <li><span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, possimus.</span></li>
+            </ul>
+          </div>
+          <div class="col-12" id="FAQs"
+            style="border-bottom-style: dashed; border-color: rgb(0, 85, 255); border-width: 1px; padding-top: 25px">
+            <h4><b> Treatment FAQs<span class="dot">.</span></b></h4>
+            <hr>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    How do I know the clinic I am searching is verified?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-muted">Placeholder content for this accordion, which is intended to demonstrate
+                    the accordion-flush class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    I can't trvel alone so some family member or friend of mine accompany me?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-muted">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                    this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Can I se my doctor before I decide and what about my post recovery?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-muted">Placeholder content for this accordion, which is intended to demonstrate
+                    the.accordion-flush class. This is the third item's accordion body. Nothing more
+                    exciting happening here in terms of content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsef" aria-expanded="false" aria-controls="flush-collapsef">
+                    How do I share my repoets and medical cases with the clinic of my choice?
+                  </button>
+                </h2>
+                <div id="flush-collapsef" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                    exciting happening here in terms of content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" id="Patient Stories"
+          style="border-bottom-style: dashed; border-color: rgb(0, 85, 255); border-width: 1px; padding-top: 25px">
+          <h4><b>Patient Stories and Videos<span class="dot">.</span></b></h4>
+          <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <div class="row mb-3 ">
+                        <div class="col-md-6">
+                          <div class="card p-2 item">
+                            <h6><b>Underwent procedure for<br>retinal detachment</b></h6>
+                              <img src="card1.jpg" class="card-img-top" alt="..." loading="lazy">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-3">
+                                    <img src="p1.jpg" class="mr-3 rounded-circle" alt="Profile Icon" style="width: 50px;">
+                                  </div>
+                                  <div class="col-9">
+                                    <h5 class="mt-0">Luke Olfert</h5> <small class="text-muted">New York,USA</small>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                        <div class="col-md-6 ">
+                            <div class="card p-2 item">
+                              <h6><b>Underwent Colonoscopy and <br> Medical Management</b></h6><br>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, accusantium dolor dicta reprehenderit nam error eum incidunt quos, exercitationem dolorum doloremque repellat harum. Ipsum magni magnam sit beatae consequuntur ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, rem? Lorem ipsum dolor sit amet consectetur </p>
+
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-3">
+                                      <img src="p2.jpg" class="mr-3 rounded-circle" alt="Profile Icon" style="width: 50px;" loading="lazy">
+                                    </div>
+                                    <div class="col-9">
+                                      <h5 class="mt-0">Luke Olfert</h5> <small class="text-muted">Seoul, Korea</small>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                          <div class="card item">
+                            <h6><b>Underwent Colonoscopy and <br> Medical Management</b></h6><br>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, accusantium dolor dicta reprehenderit nam error eum incidunt quos, exercitationem dolorum doloremque repellat harum. Ipsum magni magnam sit beatae consequuntur ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, rem? Lorem ipsum dolor sit amet consectetur </p>
+
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-3">
+                                    <img src="p2.jpg" class="mr-3 rounded-circle" alt="Profile Icon" style="width: 50px;" loading="lazy">
+                                  </div>
+                                  <div class="col-9">
+                                    <h5 class="mt-0">Luke Olfert</h5> <small class="text-muted">Seoul, Korea</small>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                        <div class="col-md-6 ">
+                          <div class="card item">
+                            <h6><b>Underwent Colonoscopy and <br> Medical Management</b></h6><br>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, accusantium dolor dicta reprehenderit nam error eum incidunt quos, exercitationem dolorum doloremque repellat harum. Ipsum magni magnam sit beatae consequuntur ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, rem? Lorem ipsum dolor sit amet consectetur </p>
+
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-3">
+                                    <img src="p2.jpg" class="mr-3 rounded-circle" alt="Profile Icon" style="width: 50px;" loading="lazy">
+                                  </div>
+                                  <div class="col-9">
+                                    <h5 class="mt-0">Luke Olfert</h5> <small class="text-muted">Seoul, Korea</small>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-md-6">
+                          <div class="card item">
+                            <h6><b>Underwent Colonoscopy and <br> Medical Management</b></h6><br>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, accusantium dolor dicta reprehenderit nam error eum incidunt quos, exercitationem dolorum doloremque repellat harum. Ipsum magni magnam sit beatae consequuntur ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, rem? Lorem ipsum dolor sit amet consectetur </p>
+
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-3">
+                                    <img src="p2.jpg" class="mr-3 rounded-circle" alt="Profile Icon" style="width: 50px;" loading="lazy">
+                                  </div>
+                                  <div class="col-9">
+                                    <h5 class="mt-0">Luke Olfert</h5> <small class="text-muted">Seoul, Korea</small>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                        <div class="col-md-6 ">
+                          <div class="card item">
+                            <h6><b>Underwent Colonoscopy and <br> Medical Management</b></h6><br>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, accusantium dolor dicta reprehenderit nam error eum incidunt quos, exercitationem dolorum doloremque repellat harum. Ipsum magni magnam sit beatae consequuntur ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, rem? Lorem ipsum dolor sit amet consectetur </p>
+
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-3">
+                                    <img src="p2.jpg" class="mr-3 rounded-circle" alt="Profile Icon" style="width: 50px;" loading="lazy">
+                                  </div>
+                                  <div class="col-9">
+                                    <h5 class="mt-0">Luke Olfert</h5> <small class="text-muted">Seoul, Korea</small>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <form>
+          <div class="mb-3 ms-5 border border-2 rounded" id="height-form">
+            <div class="container">
+              <div class="row mt-3">
+                <div class="col-12 justify-content-center">
+                  <h1 class="text-info">Need Help?</h1>
+              <p class="text-muted">Just let us know, We will be happy to assist you.</p>
+              <input type="text" class="form-control mb-3 inp" id="fullname" placeholder="Full Name"
+                aria-describedby="emailHelp">
+              <input type="email" class="form-control mb-3 inp" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Email">
+              <input type="email" class="form-control mb-3 inp" id="Phonenumber" placeholder="Phone Number">
+              <textarea name="Description" id="" class="form-control mb-3"
+                placeholder="Describe your Treatment Requirement"></textarea>
+              <button type="submit" class="btn btn-primary ">Enquire</button>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <h1 style="font-family:  'Brush Script MT'; color: red;"><center>Doctors</center></h1>
+        <h2><center>Top Orthopaedic <span style="color: rgb(0, 85, 255);">Doctors</span></center></h2>
+        <div id="carouselExample1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card p-5" >
+                              <img src="p1.jpg" class="card-img-top" alt="..." loading="lazy">
+                              <div class="card-body">
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Dr.Faique Falke</center></h4>
+                                  <h6 class="mt-0">Musaffah Industrial - Abu Dhabi</h6> <small class="text-muted">Doctor Degree & Specialist</small>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card p-5">
+                            <img src="p2.jpg" class="card-img-top" alt="..." loading="lazy">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Dr.Faique Falke</center></h4>
+                                <h6 class="mt-0">Musaffah Industrial - Abu Dhabi</h6> <small class="text-muted">Doctor Degree & Specialist</small>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-4">
+                          <div class="card p-5">
+                              <img src="p1.jpg" class="card-img-top" alt="..."loading="lazy">
+                              <div class="card-body">
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Dr.Faique Falke</center></h4>
+                                  <h6 class="mt-0">Musaffah Industrial - Abu Dhabi</h6> <small class="text-muted">Doctor Degree & Specialist</small>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card p-5">
+                              <img src="p2.jpg" class="card-img-top" alt="..."loading="lazy">
+                              <div class="card-body">
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Dr.Faique Falke</center></h4>
+                                  <h6 class="mt-0">Musaffah Industrial - Abu Dhabi</h6> <small class="text-muted">Doctor Degree & Specialist</small>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card p-5">
+                            <img src="p1.jpg" class="card-img-top" alt="..."loading="lazy">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Dr.Faique Falke</center></h4>
+                                <h6 class="mt-0">Musaffah Industrial - Abu Dhabi</h6> <small class="text-muted">Doctor Degree & Specialist</small>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-4">
+                          <div class="card p-5">
+                              <img src="p2.jpg" class="card-img-top" alt="..."loading="lazy">
+                              <div class="card-body">
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Dr.Faique Falke</center></h4>
+                                  <h6 class="mt-0">Musaffah Industrial - Abu Dhabi</h6> <small class="text-muted">Doctor Degree & Specialist</small>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card p-5">
+                              <img src="p1.jpg" class="card-img-top" alt="..."loading="lazy">
+                              <div class="card-body">
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Dr.Faique Falke</center></h4>
+                                  <h6 class="mt-0">Musaffah Industrial - Abu Dhabi</h6> <small class="text-muted">Doctor Degree & Specialist</small>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card p-5">
+                            <img src="p2.jpg" class="card-img-top" alt="..."loading="lazy">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Dr.Faique Falke</center></h4>
+                                <h6 class="mt-0">Musaffah Industrial - Abu Dhabi</h6> <small class="text-muted">Doctor Degree & Specialist</small>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-4">
+                          <div class="card p-5">
+                              <img src="p1.jpg" class="card-img-top" alt="..."loading="lazy">
+                              <div class="card-body">
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Dr.Faique Falke</center></h4>
+                                  <h6 class="mt-0">Musaffah Industrial - Abu Dhabi</h6> <small class="text-muted">Doctor Degree & Specialist</small>
+                  Doctor Degree & Specialist
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h1 style="font-family:  'Brush Script MT'; color: red;"><center>Hospitals</center></h1>
+        <h2><center>Recommended <span style="color: rgb(0, 85, 255);">Hospitals</span></center></h2>
+        <div id="carouselExample2" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card" style="border-style: dashed; border-color: red;">
+                              <img src="h1.jpg" class="card-img-top" alt="..."loading="lazy">
+                              <div class="card-body">
+                                  <h5 class="card-title"><center>Apollo Hospital</center></h5>
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Banglore</center></h4>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card"style="border-style: dashed; border-color: red; mb-2">
+                            <img src="h1.jpg" class="card-img-top" alt="..."loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title"><center>Medanta Hospital</center></h5>
+                                <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Gurgaon</center></h4>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-4">
+                          <div class="card"style="border-style: dashed; border-color: red;">
+                              <img src="h1.jpg" class="card-img-top" alt="..."loading="lazy">
+                              <div class="card-body">
+                                  <h5 class="card-title"><center>Jaslok Hospital</center></h5>
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Mumbai</center></h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="h1.jpg" class="card-img-top" alt="..."loading="lazy">
+                              <div class="card-body">
+                                  <h5 class="card-title"><center>Appolo Hospital</center></h5>
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Banglore</center></h4>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card">
+                            <img src="h1.jpg" class="card-img-top" alt="..."loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title"><center>Appolo Hospital</center></h5>
+                                <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Banglore</center></h4>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="h1.jpg" class="card-img-top" alt="..."loading="lazy">
+                              <div class="card-body">
+                                  <h5 class="card-title"><center>Appolo Hospital</center></h5>
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Banglore</center></h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="h1.jpg" class="card-img-top" alt="..."loading="lazy">
+                              <div class="card-body">
+                                  <h5 class="card-title"><center>Appolo Hospital</center></h5>
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Banglore</center></h4>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card">
+                            <img src="h1.jpg" class="card-img-top" alt="..."loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title"><center>Appolo Hospital</center></h5>
+                                <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Banglore</center></h4>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="h1.jpg" class="card-img-top" alt="..."loading="lazy">
+                              <div class="card-body">
+                                  <h5 class="card-title"><center>Appolo Hospital</center></h5>
+                                  <h4 class="card-title" style="color: red; font-family:'Brush Script MT';"> <center>Banglore</center></h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <p><center>Don't hesitate, contact us for better help and services. <span style="color: red;"><u>Explore all Hospitals</u></span></center></p><br>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 bg-info pt-4">
+        <h6 style="color: rgba(255, 0, 0, 0.906);"><center><b>Stay healthy and strong to enjoy life</b></center></h6>
+        <h1 style="color: white;"><center>We have team of healthcare experts</center></h1>
+        <h3><center><button type="button" class="btn btn-primary">Get in Touch</button> <span style="color: white;"> |</span> <span style="color: white;">+91 898 777 9999</span></center></h3>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-dark" >
+    <div class="row text-light">
+      <div class="col-3 mt-3">
+        <h3>Important Links</h3>
+        <ul style="list-style-type: none;" >
+          <li style="color: wheat;"><span style="color: blue;">-</span>  Home</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> About Us</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> FAQs</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Blog</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Contact Us</li>
+        </ul>
+      </div>
+      <div class="col-3 mt-3">
+        <h3>Top Hospitals</h3>
+        <ul style="list-style-type: none;">
+          <li style="color: wheat;"><span style="color: blue;">-</span> Apollo Hospital Delhi</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Medanta Hospital Gurgaon</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Max Hospital Delhi</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Jaslok Hospital Mumbai</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Artemis Hospital Gurgaon</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Fortis Hospital Gurgaon</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> View All</li>
+        </ul>
+      </div>
+      <div class="col-3 mt-3">
+        <h3>Specility Treatments</h3>
+        <ul style="list-style-type: none;">
+          <li style="color: wheat;"><span style="color: blue;">-</span> Knee Replacement Surgeon</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Urologist</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Spine Surgeon</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> ENT Surgeons</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Orthopedic</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Cardiologist</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> View All</li>
+        </ul>
+      </div>
+      <div class="col-3 mt-3">
+        <h5>Medical Tourism Destination</h5>
+        <ul style="list-style-type: none;">
+          <li style="color: wheat;"><span style="color: blue;">-</span> Medical Tourism in India</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Medical Tourism in Sri Lanka</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> Medical Tourism in UAE</li>
+          <li style="color: wheat;"><span style="color: blue;">-</span> View All</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row text-light" style="border-top-style: dashed; border-color: rgb(0, 85, 255); border-width: 1px;" >
+      <div class="col-4 mt-3">
+        <img src="logo.jpg.png" alt="..." loading="lazy">
+      </div>
+      <div class="col-4 mt-3">
+        <h3>About Aafiya Mediretreats</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora, quae corporis necessitatibus enim, sint ex, et praesentium velit ut quia itaque corrupti nostrum maiores doloremque omnis tempore assumenda eos.</p></div>
+      <div class="col-4 mt-3">
+        <center>Follow us</center>
+        <center><i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-youtube"></i></center>
+          <br>
+          <center>Customer Services</center>
+          <center><span style="color: rgb(0, 153, 255);"><b>+91 9856555666</b></span></center>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row bg-info">
+      <div class="col-6" style="color: white;">
+        Copyright <i class="bi bi-c-circle"></i> 2020 Aafiya Mediretreats. All Rights Reserved. Designed by Ideamagix
+      </div>
+      <div class="col-3" style="color: white;">Terms and Conditions</div>
+      <div class="col-3" style="color: white;">Privcay Policy</div>
+    </div>
+  </div>
+
+
+     
+
+
+</body>
+<script>
+  // JavaScript to toggle submenu visibility
+  document.querySelectorAll('.dropdown-submenu').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.stopPropagation();
+      el.classList.toggle('show');
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.dropdown-submenu').forEach(function (el) {
+      if (!el.contains(e.target)) {
+        el.classList.remove('show');
+      }
+    });
+  });
+
+  // Wait for the page to fully load
+window.addEventListener('load', function() {
+  // Add 'loaded' class to the body to hide the loader
+  document.body.classList.add('loaded');
+});
+
+
+
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>
